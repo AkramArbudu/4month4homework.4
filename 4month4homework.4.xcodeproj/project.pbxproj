@@ -13,9 +13,15 @@
 		C55CA2B02972D40D00F105BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55CA2AE2972D40D00F105BC /* Main.storyboard */; };
 		C55CA2B22972D40F00F105BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55CA2B12972D40F00F105BC /* Assets.xcassets */; };
 		C55CA2B52972D40F00F105BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55CA2B32972D40F00F105BC /* LaunchScreen.storyboard */; };
+		C5640BAE2972E3B300248D99 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5640BAD2972E3B300248D99 /* JokeModel.swift */; };
+		C5640BB02972E3E800248D99 /* JokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5640BAF2972E3E800248D99 /* JokeController.swift */; };
+		C5640BB22972E44400248D99 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5640BB12972E44400248D99 /* NetworkLayer.swift */; };
+		D7865F2E86F62D5AF3010EF6 /* Pods_4month4homework_4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F074AA053959DA5F30AF82B3 /* Pods_4month4homework_4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4992880AE75BE94C7E937F5B /* Pods-4month4homework.4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4month4homework.4.release.xcconfig"; path = "Target Support Files/Pods-4month4homework.4/Pods-4month4homework.4.release.xcconfig"; sourceTree = "<group>"; };
+		8207D6062045C1CE5B1D8A75 /* Pods-4month4homework.4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-4month4homework.4.debug.xcconfig"; path = "Target Support Files/Pods-4month4homework.4/Pods-4month4homework.4.debug.xcconfig"; sourceTree = "<group>"; };
 		C55CA2A52972D40D00F105BC /* 4month4homework.4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4month4homework.4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55CA2A82972D40D00F105BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C55CA2AA2972D40D00F105BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		C55CA2B12972D40F00F105BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C55CA2B42972D40F00F105BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C55CA2B62972D40F00F105BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5640BAD2972E3B300248D99 /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		C5640BAF2972E3E800248D99 /* JokeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeController.swift; sourceTree = "<group>"; };
+		C5640BB12972E44400248D99 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		F074AA053959DA5F30AF82B3 /* Pods_4month4homework_4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_4month4homework_4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7865F2E86F62D5AF3010EF6 /* Pods_4month4homework_4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13AEA1595993146244022480 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8207D6062045C1CE5B1D8A75 /* Pods-4month4homework.4.debug.xcconfig */,
+				4992880AE75BE94C7E937F5B /* Pods-4month4homework.4.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C55CA29C2972D40D00F105BC = {
 			isa = PBXGroup;
 			children = (
 				C55CA2A72972D40D00F105BC /* 4month4homework.4 */,
 				C55CA2A62972D40D00F105BC /* Products */,
+				13AEA1595993146244022480 /* Pods */,
+				EEBC3AB6CFE773C994C6E1A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +85,19 @@
 				C55CA2B12972D40F00F105BC /* Assets.xcassets */,
 				C55CA2B32972D40F00F105BC /* LaunchScreen.storyboard */,
 				C55CA2B62972D40F00F105BC /* Info.plist */,
+				C5640BAD2972E3B300248D99 /* JokeModel.swift */,
+				C5640BAF2972E3E800248D99 /* JokeController.swift */,
+				C5640BB12972E44400248D99 /* NetworkLayer.swift */,
 			);
 			path = 4month4homework.4;
+			sourceTree = "<group>";
+		};
+		EEBC3AB6CFE773C994C6E1A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F074AA053959DA5F30AF82B3 /* Pods_4month4homework_4.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C55CA2B92972D40F00F105BC /* Build configuration list for PBXNativeTarget "4month4homework.4" */;
 			buildPhases = (
+				7433F52B77FF3BA51BA17F20 /* [CP] Check Pods Manifest.lock */,
 				C55CA2A12972D40D00F105BC /* Sources */,
 				C55CA2A22972D40D00F105BC /* Frameworks */,
 				C55CA2A32972D40D00F105BC /* Resources */,
+				86D521D30C32279514571466 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +168,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7433F52B77FF3BA51BA17F20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-4month4homework.4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D521D30C32279514571466 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-4month4homework.4/Pods-4month4homework.4-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-4month4homework.4/Pods-4month4homework.4-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-4month4homework.4/Pods-4month4homework.4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C55CA2A12972D40D00F105BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5640BB22972E44400248D99 /* NetworkLayer.swift in Sources */,
+				C5640BAE2972E3B300248D99 /* JokeModel.swift in Sources */,
 				C55CA2AD2972D40D00F105BC /* ViewController.swift in Sources */,
+				C5640BB02972E3E800248D99 /* JokeController.swift in Sources */,
 				C55CA2A92972D40D00F105BC /* AppDelegate.swift in Sources */,
 				C55CA2AB2972D40D00F105BC /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +362,7 @@
 		};
 		C55CA2BA2972D40F00F105BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8207D6062045C1CE5B1D8A75 /* Pods-4month4homework.4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +391,7 @@
 		};
 		C55CA2BB2972D40F00F105BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4992880AE75BE94C7E937F5B /* Pods-4month4homework.4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
